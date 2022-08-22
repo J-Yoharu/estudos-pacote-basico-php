@@ -1,0 +1,19 @@
+{
+    "name": "pacote/basico",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "jonathas Augusto",
+            "email": "jonathas_a.a@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Basico\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0"
+    }
+}
