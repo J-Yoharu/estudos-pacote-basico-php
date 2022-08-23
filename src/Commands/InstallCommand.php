@@ -4,7 +4,7 @@ namespace Basico\Commands;
 
 use Illuminate\Console\Command;
 
-class InstallComand extends Command
+class InstallCommand extends Command
 {
     protected $signature = 'install:teste';
 
@@ -12,6 +12,6 @@ class InstallComand extends Command
 
     public function handle()
     {
-        dd("ok, do comando teste");
+        dd("Ok, pelo teste de comando;");
     }
 }
