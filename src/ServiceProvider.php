@@ -21,5 +21,7 @@ class ServiceProvider extends LaravelServiceProvider
                 InstallCommand::class,
             ]);
         }
+        
+        $this->loadRoutesFrom(__DIR__.'/Routes/api.php');
     }
 }
