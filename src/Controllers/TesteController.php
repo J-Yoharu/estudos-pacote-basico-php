@@ -3,8 +3,9 @@
 namespace Basico\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
-class TesteController
+class TesteController extends Controller
 {
     public function teste()
     {
