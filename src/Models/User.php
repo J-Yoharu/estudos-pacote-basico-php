@@ -17,6 +17,10 @@ class User extends Model
 
     public $connection = 'mysql';
 
+    protected $hidden = [
+        'password'
+    ];
+    
     public function setPasswordAttribute($value)
     {
         $this->attributes['password'] = Hash::make($value);

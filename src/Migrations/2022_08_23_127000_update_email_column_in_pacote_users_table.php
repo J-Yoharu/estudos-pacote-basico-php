@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UpdateEmailColumnInPacoteUsersTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -29,4 +29,4 @@ class UpdateEmailColumnInPacoteUsersTable extends Migration
             $table->dropUnique('pacote_users_email_unique');
         });
     }
-}
+};
