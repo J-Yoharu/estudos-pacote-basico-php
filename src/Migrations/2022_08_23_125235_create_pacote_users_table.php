@@ -13,7 +13,7 @@ class CreatePacoteUsersTable extends Migration
      */
     public function up()
     {
-        Schema::table('pacote_users', function (Blueprint $table) {
+        Schema::create('pacote_users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->integer('age');
