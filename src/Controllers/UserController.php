@@ -32,10 +32,10 @@ class UserController extends Controller
     public function update(Request $request, $id)
     {
         $data = $request->validate([
-            'name' => 'required|filled',
-            'age' => 'required|numeric|filled',
-            'email' => 'required|email|filled',
-            'password' => 'required|filled'
+            'name' => 'filled',
+            'age' => 'filled|numeric',
+            'email' => 'filled|email',
+            'password' => 'filled'
         ]);
 
         return response()->json(['method' => 'update', 'id' => $id, 'data' => $data]);
