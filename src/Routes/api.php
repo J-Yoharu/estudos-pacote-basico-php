@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('/pacote-basico')->group(function() {
+Route::prefix('pacote-basico')->group(function() {
     Route::get('teste', function(Request $request) {
         echo "get/teste";
         dd($request->all());
