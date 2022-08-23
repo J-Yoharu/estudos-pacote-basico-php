@@ -1,11 +1,12 @@
 <?php
 
-use Basico\Controllers\TesteController;
+use Basico\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-
-Route::prefix('pacote-basico')->group(function() {
-    Route::get('teste', [TesteController::class, 'teste']);
-    Route::post('teste', [TesteController::class, 'teste']);
-    Route::put('teste', [TesteController::class, 'teste2']);
-    Route::delete('teste', [TesteController::class, 'teste2']);
+$prefix = 'pacote';
+Route::prefix("$prefix/user")->group(function() {
+    Route::get('/', [UserController::class, 'paginate']);
+    Route::get('/{id}', [UserController::class, 'show']);
+    Route::post('/', [UserController::class, 'create']);
+    Route::put('/{id}', [UserController::class, 'update']);
+    Route::delete('/{id}', [UserController::class, 'delete']);
 });
