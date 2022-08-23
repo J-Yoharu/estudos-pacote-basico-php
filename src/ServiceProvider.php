@@ -1,4 +1,7 @@
 <?php
+
+namespace Basico;
+
 use Basico\Commands\InstallCommand;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
