@@ -23,7 +23,7 @@ class ServiceProvider extends LaravelServiceProvider
         }
         
         $this->loadRoutesFrom(__DIR__.'/Routes/api.php');
-        
+        $this->loadMigrationsFrom(__DIR__.'/Migrations');
         $this->publishes([
             __DIR__.'/Controllers/TesteController.php' => app_path('Modules/Auth/Http/Controllers/Login2Controller.php')
         ]);
